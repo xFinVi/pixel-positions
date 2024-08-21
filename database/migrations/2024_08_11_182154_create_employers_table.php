@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
             $table->string('name');
-            $table->string('logo');
+            $table->string('logo')->nullable()->default('https://picsum.photos/200');
             $table->timestamps();
         });
     }

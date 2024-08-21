@@ -27,19 +27,21 @@ class RegisteredUserController extends Controller
             'email' => ['email', 'required', 'unique:users,email'],
             'password' => ['required', 'confirmed', Password::min(6)]
         ]);
+
+        $randomNumber = rand(1, 1000); // Adjust the range as needed
+        $logoUrl = "https://picsum.photos/200?random=$randomNumber";
+
         $employerAttributes = $request->validate([
             'employer' => 'required',
-            'logo' => ['required', File::types(['png', 'jpg', 'webp'])],
-
         ]);
 
         $user = User::create($userAttributes);
 
-        $logoPath = $request->logo->store('logos');
+
 
         $user->employer()->create([
             'name' => $employerAttributes['employer'],
-            'logo' => $logoPath
+            'logo' => $logoUrl
         ]);
 
         Auth::login($user);

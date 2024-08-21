@@ -21,7 +21,7 @@
         <x-forms.divider></x-forms.divider>
         <x-forms.input label="URL" name="url" placeholder="https://acme.com/jobs/ceo-wanted" />
         <x-forms.checkbox label="Feature (Costs extra)" name="featured" />
-        <x-forms.input label="Tags (Keep separated)" name="tags" placeholder="Education, IT, Food" />
+        <x-forms.input label="Tags (Keep separated)" name="tags" placeholder="Education" />
         <x-forms.button type="submit">Publish</x-forms.button>
     </x-forms.form>
 

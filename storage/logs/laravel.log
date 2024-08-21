@@ -1367,3 +1367,7 @@ Did you mean one of these?
 #4 C:\\Users\\Filip\\Herd\\pixel-positions\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
 #5 {main}
 "} 
+[2024-08-21 08:45:48] local.ERROR: Maximum execution time of 60 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 60 seconds exceeded at C:\\Users\\Filip\\Herd\\pixel-positions\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php:255)
+[stacktrace]
+#0 {main}
+"} 

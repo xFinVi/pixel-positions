@@ -1,6 +1,6 @@
 <x-layout>
     <x-page-heading> Register</x-page-heading>
-    <x-forms.form method="POST" action="/register" enctype="multipart/form-data">
+    <x-forms.form method="POST" action="/register">
 
         <x-forms.input label="Your Name" name="name" type="text" />
         <x-forms.input label="Email" name="email" type="email" />
@@ -9,7 +9,7 @@
         <x-forms.divider></x-forms.divider>
 
         <x-forms.input label="Employer Name" name="employer" type="text" />
-        <x-forms.input label="Employer Logo" name="logo" type="file" />
+
 
 
         <x-forms.button>Create Account</x-forms.button>

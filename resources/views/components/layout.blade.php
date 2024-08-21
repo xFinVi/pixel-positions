@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 
@@ -69,8 +69,8 @@
                     <div class="flex items-center flex-1 sm:items-stretch sm:justify-between">
                         <div class="flex items-center flex-shrink-0">
                             <a href="/" aria-label="Home">
-                                <img src="{{ asset('/storage/images/job-logo.png') }}" alt="Job Logo"
-                                    class="object-contain w-auto h-12 bg-white rounded-lg max-h-16">
+                                <img src="https://img.freepik.com/free-vector/hub-logo-template_23-2149852444.jpg?t=st=1724241539~exp=1724245139~hmac=36cfce049ed8a1e7b7e99298af4b3449e14a84023d0a2b0e214486b70fc040cb&w=826"
+                                    alt="Job Logo" class="object-contain w-auto h-12 bg-white rounded-lg max-h-16">
                             </a>
 
 
