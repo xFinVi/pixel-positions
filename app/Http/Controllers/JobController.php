@@ -81,9 +81,15 @@ class JobController extends Controller
 
         // Attach tags if present
         if ($request->filled('tags')) {
-            foreach (explode(',', $request->tags) as $tag) {
-                $job->tag(trim($tag));
+            $tags = explode(',', $request->tags);
+            $tagIds = [];
+
+            foreach ($tags as $tagName) {
+                $tag = Tag::firstOrCreate(['name' => trim($tagName)]);
+                $tagIds[] = $tag->id;
             }
+
+            $job->tags()->sync($tagIds);
         }
         session()->flash('success', 'Job posted successfully!');
 
@@ -129,9 +135,15 @@ class JobController extends Controller
 
         // Update tags if provided
         if ($request->filled('tags')) {
-            foreach (explode(',', $request->tags) as $tag) {
-                $job->tag(trim($tag));
+            $tags = explode(',', $request->tags);
+            $tagIds = [];
+
+            foreach ($tags as $tagName) {
+                $tag = Tag::firstOrCreate(['name' => trim($tagName)]);
+                $tagIds[] = $tag->id;
             }
+
+            $job->tags()->sync($tagIds);
         }
 
         session()->flash('success', 'Job updated successfully!');
