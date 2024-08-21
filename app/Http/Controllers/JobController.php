@@ -85,7 +85,8 @@ class JobController extends Controller
             $tagIds = [];
 
             foreach ($tags as $tagName) {
-                $tag = Tag::firstOrCreate(['name' => trim($tagName)]);
+                $tagName = strtolower(trim($tagName)); // Convert tag name to lowercase
+                $tag = Tag::firstOrCreate(['name' => $tagName]);
                 $tagIds[] = $tag->id;
             }
 
@@ -139,7 +140,8 @@ class JobController extends Controller
             $tagIds = [];
 
             foreach ($tags as $tagName) {
-                $tag = Tag::firstOrCreate(['name' => trim($tagName)]);
+                $tagName = strtolower(trim($tagName));
+                $tag = Tag::firstOrCreate(['name' => $tagName]);
                 $tagIds[] = $tag->id;
             }
 
@@ -148,7 +150,7 @@ class JobController extends Controller
 
         session()->flash('success', 'Job updated successfully!');
 
-        // Redirect to the job show page or a specific route where the message should be displayed
+
         return redirect()->route('jobs.edit', $job->id);
     }
 
