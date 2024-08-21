@@ -69,7 +69,7 @@
                     <div class="flex items-center flex-1 sm:items-stretch sm:justify-between">
                         <div class="flex items-center flex-shrink-0">
                             <a href="/" aria-label="Home">
-                                <img src="https://i.ibb.co/FDtxYNf/job-logo.png" alt="Job Logo"
+                                <img src="{{ asset('/storage/images/job-logo.png') }}" alt="Job Logo"
                                     class="object-contain w-auto h-12 bg-white rounded-lg max-h-16">
                             </a>
 
