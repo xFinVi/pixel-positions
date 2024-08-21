@@ -45,7 +45,7 @@
         <section class="mb-12 ">
             <h2 class="mb-6 text-3xl font-semibold text-white ">Career Growth</h2>
             <p class="mb-6 text-lg">Discover the opportunities for career development and growth within our company.</p>
-            <!-- Details about training and career pathways -->
+            <!-- Details about training and career pathwaysdsdsg -->
             <div class="p-6 bg-white rounded-lg shadow-lg">
                 <p class="text-gray-700">We offer various training programs, mentorship opportunities, and clear career
                     pathways to support your professional growth.</p>

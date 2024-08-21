@@ -30,7 +30,6 @@ Route::get('/careers', function () {
 
 
 
-
 // Route for search
 Route::get('/search', SearchController::class);
 

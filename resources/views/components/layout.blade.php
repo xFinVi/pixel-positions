@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
 
-    @vite('resources/js/app.js, resources/css/app.css')
 </head>
 
 @php
